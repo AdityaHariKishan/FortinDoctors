@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/actionBarSize"
+    android:background="@color/colorPrimary"
+    app:popupTheme="@style/Theme.AppCompat.Light.DarkActionBar">
+    <FrameLayout android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+        <ImageView android:id="@+id/ivdrawer"
+            android:layout_height="35dp"
+            android:layout_width="35dp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_drawer"/>
+        <TextView android:id="@+id/tvheading"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:theme="@style/AppTheme.Title"/>
+    </FrameLayout>
+</android.support.v7.widget.Toolbar>

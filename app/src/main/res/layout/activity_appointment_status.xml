@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.doctor.app.AppointmentStatus"
+    android:background="@color/layout_bg"
+    android:orientation="vertical">
+
+    <LinearLayout android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageView android:layout_height="150dp"
+            android:layout_width="150dp"
+            android:src="@drawable/ic_success"
+            android:layout_gravity="center" />
+
+        <TextView android:id="@+id/txt1"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Your appointment is booked for 14 July 2017 at 8:00 am"
+            android:textSize="18dp"
+            android:padding="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <Button android:id="@+id/btnhome"
+        android:layout_height="46dp"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:text="Back To Home"
+        android:typeface="sans"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textSize="17dp"/>
+
+</LinearLayout>

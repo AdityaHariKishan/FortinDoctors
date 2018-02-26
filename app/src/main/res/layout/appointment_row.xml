@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/llappointment">
+
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView android:id="@+id/ivdoctor"
+            android:layout_height="80dp"
+            android:layout_width="80dp"
+            android:src="@drawable/ic_user"
+            android:padding="10dp"/>
+
+        <LinearLayout android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView android:id="@+id/tvdrname"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:textColor="@color/textPrimary"
+                android:typeface="sans"
+                android:text="Dr. Kavya Patel"/>
+
+            <com.github.curioustechizen.ago.RelativeTimeTextView
+                android:id="@+id/tvtime"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="3dp"
+                app:relative_time_prefix=""
+                android:textColor="@color/textSecondary"
+                android:typeface="sans"/>
+
+            <TextView android:id="@+id/tvstatus"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="3dp"
+                android:text="Pending"
+                android:textColor="@color/textSecondary"
+                android:typeface="sans"
+                android:gravity="right|center_vertical"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView android:id="@+id/tvnote"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Note"
+        android:textColor="@color/textSecondary"
+        android:typeface="sans"/>
+
+    <View android:layout_height="0.5dp"
+        android:layout_width="match_parent"
+        android:background="@color/divider"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"/>
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "195502078187",
+    "firebase_url": "https://fortindoctor.firebaseio.com",
+    "project_id": "fortindoctor",
+    "storage_bucket": "fortindoctor.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:195502078187:android:37fd37943ffb1a15",
+        "android_client_info": {
+          "package_name": "com.fortin.doctor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "195502078187-bmo6v0jm3ef9voutnuu58uv9r82id66o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdDRBy8ey_eZ1XTx3uWHWcV5GeS54EVGg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

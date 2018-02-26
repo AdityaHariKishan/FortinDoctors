@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:background="#4D000000"
+    android:gravity="center">
+
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:text="Add Prescription Detail"
+            android:textSize="17dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/textPrimary"/>
+
+        <EditText android:id="@+id/etdesc"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColor="@color/textPrimary"
+            android:textColorHint="@color/textSecondary"
+            android:textSize="16dp"
+            android:hint="Prescription"
+            android:padding="8dp"
+            android:minLines="3"
+            android:maxLines="5"
+            android:gravity="left|top"
+            android:inputType="textMultiLine"/>
+
+        <LinearLayout android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnskip"
+                style="@style/ButtonOrange"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="46dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center_horizontal"
+                android:text="Skip"
+                android:textAllCaps="false"
+                android:visibility="gone"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btnsubmit"
+                style="@style/ButtonOrange"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="46dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center_horizontal"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

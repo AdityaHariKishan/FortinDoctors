@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.doctor.app.PrescriptionDetail"
+    android:orientation="vertical">
+
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="4dp"
+            android:layout_margin="5dp"
+            card_view:cardCornerRadius="4dp">
+
+            <LinearLayout android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:padding="5dp"
+                android:orientation="vertical">
+
+                <TextView android:id="@+id/tvdrname"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:text="Dr Kavya Patel"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/icon_user"
+                    android:drawablePadding="5dp"
+                    android:textColor="@color/textPrimary"/>
+
+                <TextView android:id="@+id/tvclinic"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="3dp"
+                    android:typeface="sans"
+                    android:text="Apple Hospital"
+                    android:drawableLeft="@drawable/icon_clinic"
+                    android:drawablePadding="5dp"
+                    android:textColor="@color/textPrimary"/>
+
+                <TextView android:id="@+id/tvphone"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="3dp"
+                    android:typeface="sans"
+                    android:text="7845127845"
+                    android:drawableLeft="@drawable/icon_phone"
+                    android:drawablePadding="5dp"
+                    android:textColor="@color/textPrimary"/>
+
+                <TextView android:id="@+id/tvclinicph"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:text="0261 784512"
+                    android:layout_marginTop="3dp"
+                    android:typeface="sans"
+                    android:drawableLeft="@drawable/icon_phone"
+                    android:drawablePadding="5dp"
+                    android:textColor="@color/textPrimary"/>
+            </LinearLayout>
+
+</android.support.v7.widget.CardView>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:text="Prescriptions"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="3dp"
+            android:typeface="sans"
+            android:textColor="@color/textSecondary"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent" />
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

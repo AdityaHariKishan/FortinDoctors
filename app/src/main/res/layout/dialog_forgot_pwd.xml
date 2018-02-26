@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="15dp">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Forgot Password"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:textSize="17dp"
+        android:padding="10dp"
+        android:typeface="sans"
+        android:gravity="center_horizontal"/>
+
+    <EditText android:id="@+id/etemailaddress"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="15dp"
+        android:layout_marginTop="10dp"
+        android:hint="Email"
+        android:imeOptions="actionDone"
+        android:textCursorDrawable="@drawable/edit_text_cursor_drawable"
+        android:textColor="@color/textPrimary"
+        android:inputType="textEmailAddress"/>
+
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_vertical">
+
+        <Button
+            android:id="@+id/btncancel"
+            android:background="@color/colorPrimary"
+            android:minWidth="112dp"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            android:id="@+id/btnforgot"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:minWidth="112dp"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Submit"
+            android:layout_marginLeft="8dp"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+
+</LinearLayout>

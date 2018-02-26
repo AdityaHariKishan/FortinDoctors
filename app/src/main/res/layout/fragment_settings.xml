@@ -1,0 +1,136 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.doctor.app.Settings"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/llcity">
+
+        <LinearLayout android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <ImageView android:layout_height="20dp"
+                android:layout_width="20dp"
+                android:src="@drawable/ic_city"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView android:id="@+id/tvcity"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="City: Surat"
+                android:padding="8dp"
+                android:textSize="16dp"
+                android:typeface="sans"
+                android:textColor="@color/textPrimary"/>
+        </LinearLayout>
+
+        <View android:layout_height="0.3dp"
+            android:layout_width="match_parent"
+            android:background="@color/divider"/>
+    </LinearLayout>
+
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/llcalender">
+
+        <LinearLayout android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <ImageView android:layout_height="20dp"
+                android:layout_width="20dp"
+                android:src="@drawable/ic_calendar"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Sync Google Calender"
+                android:padding="8dp"
+                android:textSize="16dp"
+                android:typeface="sans"
+                android:textColor="@color/textPrimary"/>
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/sw"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_gravity="right|center_vertical"/>
+        </LinearLayout>
+
+        <View android:layout_height="0.3dp"
+            android:layout_width="match_parent"
+            android:background="@color/divider"/>
+    </LinearLayout>
+
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <ImageView android:layout_height="20dp"
+            android:layout_width="20dp"
+            android:src="@drawable/ic_change_pwd"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView android:id="@+id/tvchangepwd"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Change Password"
+            android:padding="8dp"
+            android:textSize="16dp"
+            android:typeface="sans"
+            android:textColor="@color/textPrimary"/>
+    </LinearLayout>
+
+    <View android:layout_height="0.3dp"
+        android:layout_width="match_parent"
+        android:background="@color/divider"/>
+
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <ImageView android:layout_height="20dp"
+            android:layout_width="20dp"
+            android:src="@drawable/ic_edit_profile"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView android:id="@+id/tveditprofile"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Edit Profile"
+            android:padding="8dp"
+            android:textSize="16dp"
+            android:typeface="sans"
+            android:textColor="@color/textPrimary"/>
+    </LinearLayout>
+
+    <View android:layout_height="0.3dp"
+        android:layout_width="match_parent"
+        android:background="@color/divider"/>
+
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <ImageView android:layout_height="20dp"
+            android:layout_width="20dp"
+            android:src="@drawable/ic_logout"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView android:id="@+id/tvlogout"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColor="@color/textPrimary"
+            android:text="Logout"
+            android:padding="8dp"
+            android:typeface="sans"
+            android:textSize="16dp"/>
+    </LinearLayout>
+
+    <View android:layout_height="0.3dp"
+        android:layout_width="match_parent"
+        android:background="@color/divider"/>
+</LinearLayout>

@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.doctor.app.DoctorDetail">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elevation="4dp"
+                android:layout_margin="5dp"
+                card_view:cardCornerRadius="4dp">
+
+            <FrameLayout android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:id="@+id/llpager">
+
+                <LinearLayout android:layout_height="200dp"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="center">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/pager_feed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:listitem="@layout/fullimage_row" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/viewPagerIndicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:id="@+id/viewPagerCountDots"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </FrameLayout>
+        </android.support.v7.widget.CardView>
+
+            <LinearLayout android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:elevation="4dp"
+                    android:layout_margin="5dp"
+                    card_view:cardCornerRadius="4dp">
+
+                <LinearLayout android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <LinearLayout android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal">
+
+                    <LinearLayout android:layout_height="match_parent"
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView android:id="@+id/ivdr"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:padding="5dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/ic_user"/>
+                    </LinearLayout>
+
+                    <LinearLayout android:layout_height="match_parent"
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_vertical">
+
+                        <TextView android:id="@+id/tvdoctorname"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:textColor="@color/textPrimary"
+                            android:textSize="17dp"
+                            android:typeface="sans"
+                            android:textStyle="bold"
+                            android:drawableLeft="@drawable/icon_user"
+                            android:gravity="center_vertical"
+                            android:drawablePadding="5dp"
+                            android:text="Dr.Kavya Patel"/>
+
+                        <TextView android:id="@+id/tvclinic"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:textColor="@color/textSecondary"
+                            android:textSize="15dp"
+                            android:typeface="sans"
+                            android:text="Orange Hospital"
+                            android:drawableLeft="@drawable/icon_clinic"
+                            android:gravity="center_vertical"
+                            android:drawablePadding="5dp"
+                            android:layout_marginTop="3dp"/>
+
+                        <LinearLayout android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:id="@+id/lldphone"
+                            android:layout_marginTop="3dp">
+
+                            <TextView android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:text="Phone:"
+                                android:typeface="sans"
+                                android:layout_marginRight="3dp"
+                                android:gravity="center_vertical"
+                                android:drawableLeft="@drawable/icon_phone"
+                                android:drawablePadding="5dp"
+                                android:textColor="@color/textSecondary"/>
+
+                            <TextView android:id="@+id/tvdrphone"
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+                                android:text="0261 231 0703"
+                                android:gravity="center_vertical"
+                                android:textSize="14dp"
+                                android:typeface="sans"
+                                android:textColor="@color/textPrimary" />
+                        </LinearLayout>
+                    </LinearLayout>
+                        </LinearLayout>
+                    <LinearLayout android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:id="@+id/lledu"
+                            android:layout_marginTop="3dp">
+
+                            <ImageView android:layout_height="18dp"
+                                android:layout_width="18dp"
+                                android:src="@drawable/icon_education"
+                                android:paddingRight="2dp"/>
+
+                            <TextView android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:text="Education:"
+                                android:typeface="sans"
+                                android:layout_marginRight="3dp"
+                                android:textColor="@color/textSecondary"/>
+
+                            <TextView android:id="@+id/tveducation"
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+                                android:text="MBBS"
+                                android:textSize="14dp"
+                                android:typeface="sans"
+                                android:textColor="@color/textPrimary" />
+                        </LinearLayout>
+
+                        <LinearLayout android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:id="@+id/lldept"
+                            android:layout_marginTop="3dp">
+
+                            <ImageView android:layout_height="18dp"
+                                android:layout_width="18dp"
+                                android:src="@drawable/ic_department"
+                                android:paddingRight="2dp"/>
+
+                            <TextView android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:text="Department:"
+                                android:typeface="sans"
+                                android:layout_marginRight="3dp"
+                                android:textColor="@color/textSecondary"/>
+
+                            <TextView android:id="@+id/tvdepartment"
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+                                android:text=""
+                                android:textSize="14dp"
+                                android:typeface="sans"
+                                android:textColor="@color/textPrimary" />
+                        </LinearLayout>
+
+                        <LinearLayout android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="2dp">
+
+                            <LinearLayout android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="horizontal"
+                                android:gravity="center_vertical"
+                                android:id="@+id/lldist">
+
+                                <ImageView android:layout_height="18dp"
+                                    android:layout_width="18dp"
+                                    android:src="@drawable/icon_distance"
+                                    android:paddingRight="2dp"/>
+
+                                <TextView android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+                                    android:layout_marginRight="3dp"
+                                    android:textColor="@color/textSecondary"
+                                    android:text="Distance:"
+                                    android:typeface="sans"
+                                    android:layout_gravity="center_vertical"
+                                    android:gravity="center_vertical"/>
+
+                                <TextView android:id="@+id/tvdistance"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:text="1 km"
+                                    android:textColor="@color/textSecondary"
+                                    android:typeface="sans" />
+
+                            </LinearLayout>
+                            <RatingBar
+                                android:id="@+id/rb"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                style="@style/RatingBar"
+                                android:numStars="5"
+                                android:stepSize="0.01"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <TextView android:id="@+id/tvreview"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="View Reviews"/>
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:elevation="4dp"
+                    android:layout_margin="5dp"
+                    card_view:cardCornerRadius="4dp">
+
+                    <LinearLayout android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                <TextView android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="Address:"
+                    android:typeface="sans"
+                    android:textColor="@color/textSecondary"/>
+
+                <TextView android:id="@+id/tvaddress"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:textSize="14dp"
+                    android:typeface="sans"
+                    android:textColor="@color/textPrimary"
+                    android:text="Udhna Darwaja, Ring Road, Surat, Gujarat 395002"/>
+
+                <LinearLayout android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:id="@+id/llcphone">
+
+                        <TextView android:layout_height="match_parent"
+                            android:layout_width="wrap_content"
+                            android:text="Contact Number: "
+                            android:typeface="sans"
+                            android:textColor="@color/textSecondary"/>
+
+                        <TextView android:id="@+id/tvcontact"
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:text="0261 231 0703"
+                            android:textSize="14dp"
+                            android:typeface="sans"
+                            android:textColor="@color/textPrimary" />
+                    </LinearLayout>
+
+                </LinearLayout>
+                    </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:elevation="4dp"
+                    android:layout_margin="5dp"
+                    card_view:cardCornerRadius="4dp">
+
+                <LinearLayout android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+                <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Timing: "
+                    android:typeface="sans"
+                    android:textColor="@color/textSecondary"/>
+
+              <LinearLayout android:layout_height="wrap_content"
+                  android:layout_width="match_parent"
+                  android:orientation="horizontal"
+                  android:layout_marginTop="5dp">
+
+                  <TextView android:layout_height="match_parent"
+                      android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:text="Day"
+                      android:typeface="sans"
+                      android:gravity="center"
+                      android:textColor="@color/textSecondary"/>
+
+                  <TextView android:layout_height="match_parent"
+                      android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:typeface="sans"
+                      android:text="Start Time"
+                      android:gravity="center"
+                      android:textColor="@color/textSecondary"/>
+
+                  <TextView android:layout_height="match_parent"
+                      android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:text="End Time"
+                      android:typeface="sans"
+                      android:gravity="center"
+                      android:textColor="@color/textSecondary"/>
+              </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvtiming"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" />
+                </LinearLayout>
+              </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:elevation="4dp"
+                    android:layout_margin="5dp"
+                    card_view:cardCornerRadius="4dp">
+
+                <LinearLayout android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/llabt"
+                    android:padding="5dp">
+
+                    <TextView android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="About Us: "
+                        android:typeface="sans"
+                        android:textColor="@color/textSecondary"
+                        />
+
+                    <TextView android:id="@+id/tvabout"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/textPrimary"
+                        android:layout_marginTop="5dp"/>
+                </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <Button android:id="@+id/btnappointment"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="Book Appointment"
+        android:typeface="sans"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"
+        android:padding="7dp"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>

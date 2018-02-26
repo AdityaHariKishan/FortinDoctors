@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+        <TextView android:id="@+id/tvday"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Monday"
+            android:gravity="center"
+            android:typeface="sans"
+            android:textColor="@color/black"/>
+
+        <TextView android:id="@+id/tvstart"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="09:00"
+            android:gravity="center"
+            android:typeface="sans"
+            android:textColor="@color/black"/>
+
+        <TextView android:id="@+id/tvend"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="11:00"
+            android:typeface="sans"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <View android:layout_height="0.2dp"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:visibility="gone"/>
+
+</LinearLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView android:id="@+id/tvcmt"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="I would you to look to the damaged furniture and give me the estimated price"
+        android:textColor="@color/textPrimary"
+        android:textSize="14dp"
+        android:layout_marginTop="7dp"/>
+
+    <FrameLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal">
+
+            <RatingBar android:id="@+id/rbfeedback"
+                style="@style/RatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5" />
+
+            <!--<LinearLayout android:layout_height="match_parent"-->
+                <!--android:layout_width="fill_parent">-->
+            <!--<RatingBar android:id="@+id/rbfeedback"-->
+                <!--style="@style/loveRatingBar"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:numStars="5"-->
+                <!--android:rating="4" />-->
+            <!--<android.support.v7.widget.AppCompatRatingBar-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="fill_parent"-->
+                <!--style= "@style/MyRatingBarSmall"-->
+                <!--android:id="@+id/rbfeedback"-->
+                <!--android:numStars="5"-->
+                <!--android:stepSize="0.1"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:layout_gravity="right|center_vertical"-->
+                <!--android:isIndicator="true"-->
+                <!--android:progressBackgroundTint="@color/star"-->
+                <!--android:progressTint="@color/star"-->
+                <!--android:secondaryProgressTint="@color/star"/>-->
+
+            <!--<RatingBar-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="fill_parent"-->
+                <!--style= "@style/CustomRatingBar"-->
+                <!--android:id="@+id/rbfeedback"-->
+                <!--android:numStars="5"-->
+                <!--android:stepSize="0.1"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:scaleX=".5"-->
+                <!--android:scaleY=".5"-->
+                <!--android:transformPivotX="0dp"-->
+                <!--android:transformPivotY="0dp"-->
+                <!--android:layout_gravity="right|center_vertical"-->
+                <!--android:isIndicator="true"/>-->
+            <!--</LinearLayout>-->
+
+            <com.github.curioustechizen.ago.RelativeTimeTextView
+                android:id="@+id/tvdate"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:text="10/12/15"
+                android:textSize="12dp"
+                android:gravity="center_vertical"
+                app:relative_time_prefix=""
+                android:textColor="@color/textSecondary" />
+        </LinearLayout>
+
+        <TextView android:id="@+id/tvby"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical|right"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="10dp"
+            android:text="By: Adrienne Leban" />
+    </FrameLayout>
+
+    <View android:layout_height="0.5dp"
+        android:layout_width="match_parent"
+        android:background="@color/divider"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"/>
+</LinearLayout>

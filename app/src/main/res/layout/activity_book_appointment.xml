@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.doctor.app.BookAppointment">
+
+    <LinearLayout android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+        <TextView android:id="@+id/tvdoctor"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColor="@color/textPrimary"
+            android:gravity="center_horizontal"
+            android:text="Dr.Kavya Patel"
+            android:textSize="17dp"
+            android:padding="8dp"
+            android:typeface="sans"/>
+
+        <devs.mulham.horizontalcalendar.HorizontalCalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:textColorSelected="#FFFF"/>
+
+        <LinearLayout android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/ll"
+            android:layout_marginTop="5dp">
+
+            <TextView android:id="@+id/tvnodoctor"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Doctor not avaliable"
+                android:textColor="@android:color/holo_red_light"
+                android:typeface="sans"
+                android:textSize="16dp"
+                android:gravity="center_horizontal"/>
+
+            <ScrollView android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_weight="1">
+
+                <com.doctor.app.chips.ChipCloud
+                    android:id="@+id/chip_cloud"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+            </ScrollView>
+
+            <LinearLayout android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+                <EditText android:id="@+id/etnote"
+                    style="@style/EditTextStyle"
+                    android:hint="Note"
+                    android:inputType="textMultiLine"
+                    android:minLines="3"
+                    android:maxLines="5"
+                    android:layout_marginBottom="10dp"
+                    android:imeOptions="actionDone"/>
+
+                <Button
+                    android:id="@+id/btnbook"
+                    style="@style/ButtonOrange"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_gravity="center_horizontal"
+                    android:onClick="onClick"
+                    android:text="Book Now"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

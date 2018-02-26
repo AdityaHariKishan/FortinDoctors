@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.doctor.app.Doctor.DoctorProfile"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivprofile"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/ic_user"
+            android:layout_gravity="center_horizontal" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/sw"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textOn="Avaliable"
+            android:textOff="Unavaliable" />
+
+        <TextView android:id="@+id/tvstatus"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColor="@color/textPrimary"
+            android:text="Avaliable"
+            android:typeface="sans"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:textSize="15dp"/>
+
+        <EditText android:id="@+id/etusername"
+            style="@style/EditTextStyle"
+            android:hint="Doctor Name"
+            android:inputType="text"
+            android:drawableLeft="@drawable/icon_user"
+            android:drawablePadding="5dp"
+            android:imeOptions="actionNext"/>
+
+        <EditText android:id="@+id/eteducation"
+            style="@style/EditTextStyle"
+            android:hint="Education"
+            android:inputType="text"
+            android:drawableLeft="@drawable/icon_education"
+            android:drawablePadding="5dp"
+            android:imeOptions="actionNext"/>
+
+        <LinearLayout android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_gravity="center_vertical"
+            android:padding="10dp"
+            android:background="@color/white"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:orientation="horizontal">
+
+            <LinearLayout android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:gravity="center_vertical">
+
+            <ImageView android:layout_height="18dp"
+                android:layout_width="18dp"
+                android:src="@drawable/ic_department"/>
+            </LinearLayout>
+
+            <com.doctor.app.view.MultiSelectionSpinner
+                android:id="@+id/spndepartment"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                style="@style/SpinnerTheme"
+                android:spinnerMode="dropdown"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_gravity="center_vertical"
+            android:padding="10dp"
+            android:background="@color/white"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:orientation="horizontal">
+
+            <LinearLayout android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:gravity="center_vertical">
+
+                <ImageView android:layout_height="18dp"
+                    android:layout_width="18dp"
+                    android:src="@drawable/ic_city"/>
+            </LinearLayout>
+
+            <Spinner android:id="@+id/spncity"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                style="@style/SpinnerTheme"
+                android:spinnerMode="dialog"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+        <LinearLayout style="@style/EditTextStyle"
+            android:orientation="horizontal">
+
+            <LinearLayout android:layout_height="match_parent"
+                android:layout_width="wrap_content">
+
+                <ImageView android:layout_height="18dp"
+                    android:layout_width="18dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/icon_address"/>
+            </LinearLayout>
+
+            <EditText android:id="@+id/etaddress"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:hint="Address"
+                android:inputType="textMultiLine"
+                android:minLines="3"
+                android:maxLines="5"
+                android:gravity="top|left"
+                android:layout_gravity="top|left"
+                android:background="@android:color/transparent"
+                android:imeOptions="actionNext" />
+        </LinearLayout>
+
+        <EditText android:id="@+id/etphone"
+            style="@style/EditTextStyle"
+            android:hint="Personal Phone"
+            android:inputType="phone"
+            android:drawableLeft="@drawable/icon_phone"
+            android:drawablePadding="5dp"
+            android:imeOptions="actionDone"/>
+
+        <EditText android:id="@+id/etclinicname"
+            style="@style/EditTextStyle"
+            android:hint="Clinic Name"
+            android:inputType="text"
+            android:drawableLeft="@drawable/icon_clinic"
+            android:drawablePadding="5dp"
+            android:imeOptions="actionNext"/>
+
+        <EditText android:id="@+id/etclinicphone"
+            style="@style/EditTextStyle"
+            android:hint="Clinic Phone"
+            android:inputType="phone"
+            android:drawableLeft="@drawable/icon_phone"
+            android:drawablePadding="5dp"
+            android:imeOptions="actionDone"/>
+
+        <EditText android:id="@+id/etproid"
+            style="@style/EditTextStyle"
+            android:hint="Period"
+            android:drawableLeft="@drawable/icon_period"
+            android:drawablePadding="5dp"
+            android:inputType="number"
+            android:imeOptions="actionNext"/>
+
+        <EditText android:id="@+id/etabout"
+            style="@style/EditTextStyle"
+            android:hint="About"
+            android:inputType="textMultiLine"
+            android:minLines="5"
+            android:maxLines="7"
+            android:gravity="top"
+            android:imeOptions="actionNext"/>
+
+        <LinearLayout android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView android:id="@+id/btnadd"
+                android:layout_height="100dp"
+                android:layout_width="100dp"
+                android:src="@drawable/ic_add_img"
+                android:layout_gravity="center_vertical" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvfiles"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:padding="5dp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnedit"
+            style="@style/ButtonOrange"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:onClick="onClick"
+            android:text="Update"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

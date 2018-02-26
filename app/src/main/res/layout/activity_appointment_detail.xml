@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.doctor.app.AppointmentDetail"
+    android:background="@color/layout_bg">
+
+    <ScrollView android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_weight="1">
+
+    <LinearLayout android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView android:id="@+id/ivdoctor"
+                android:layout_height="80dp"
+                android:layout_width="80dp"
+                android:src="@drawable/ic_user"
+                android:padding="10dp"/>
+
+            <LinearLayout android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView android:id="@+id/tvdrname"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/textPrimary"
+                    android:typeface="sans"
+                    android:text="Dr. Kavya Patel"/>
+
+                <com.github.curioustechizen.ago.RelativeTimeTextView
+                    android:id="@+id/tvtime"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="3dp"
+                    android:text="14 july 2017 8:00 am"
+                    app:relative_time_prefix=""
+                    android:textColor="@color/textSecondary"
+                    android:typeface="sans"/>
+
+                <TextView android:id="@+id/tvstatus"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginRight="3dp"
+                    android:text="Pending"
+                    android:textColor="@color/textSecondary"
+                    android:typeface="sans"
+                    android:gravity="right|center_vertical"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView android:id="@+id/tvnote"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Note"
+            android:textColor="@color/textSecondary"
+            android:typeface="sans"/>
+    </LinearLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/btncancel"
+        style="@style/ButtonOrange"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onClick"
+        android:text="Cancel Appointment"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

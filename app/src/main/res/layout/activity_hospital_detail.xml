@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.doctor.app.HospitalDetail">
+
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:id="@+id/llpager">
+
+            <LinearLayout android:layout_height="150dp"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_gravity="center">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/pager_feed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:listitem="@layout/fullimage_row" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/viewPagerIndicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="5dp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/viewPagerCountDots"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </FrameLayout>
+
+        <LinearLayout android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="7dp">
+
+            <TextView android:id="@+id/tvclinic"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Clinic Name"
+                android:textColor="@color/textPrimary"
+                android:typeface="sans"
+                android:textSize="16dp" />
+
+            <TextView android:id="@+id/tvdistance"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Distance: 1 km"
+                android:textColor="@color/textSecondary"
+                android:typeface="sans"
+                android:textSize="14dp"
+                android:layout_marginTop="3dp"/>
+
+            <LinearLayout android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="3dp">
+
+                <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="3dp"
+                    android:textColor="@color/textSecondary"
+                    android:text="Ratings: "
+                    android:typeface="sans"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"/>
+
+                <RatingBar
+                    android:id="@+id/rb"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    style="@style/RatingBar"
+                    android:numStars="5"
+                    android:stepSize="0.01"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp">
+
+                <TextView android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:text="Address:"
+                    android:textColor="@color/textSecondary"
+                    android:layout_marginRight="3dp"
+                    android:typeface="sans"/>
+
+                <TextView android:id="@+id/tvaddress"
+                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:text=""
+                    android:textColor="@color/textPrimary"
+                    android:typeface="sans"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp">
+
+                <TextView android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:text="Phone:"
+                    android:textColor="@color/textSecondary"
+                    android:layout_marginRight="3dp"
+                    android:typeface="sans"/>
+
+                <TextView android:id="@+id/tvphone"
+                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:text=""
+                    android:textColor="@color/textPrimary"
+                    android:typeface="sans"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <LinearLayout android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView android:id="@+id/ivdoctor"
+                        android:layout_height="70dp"
+                        android:layout_width="70dp"
+                        android:src="@drawable/ic_user"
+                        android:padding="5dp"/>
+                </LinearLayout>
+
+                <LinearLayout android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical">
+
+                    <TextView android:id="@+id/tvdrname"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/textPrimary"
+                        android:textSize="16dp"
+                        android:text="Dr.Kavya Patel"
+                        android:padding="3dp"
+                        android:typeface="sans"/>
+
+                    <TextView android:id="@+id/tvdrphone"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:paddingLeft="3dp"
+                        android:text="7845127845"
+                        android:typeface="sans"
+                        android:textColor="@color/textSecondary"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="About Us:"
+                android:textColor="@color/textSecondary"
+                android:layout_marginTop="3dp"
+                android:typeface="sans"/>
+
+            <TextView android:id="@+id/tvaboutus"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text=""
+                android:textColor="@color/textPrimary"
+                android:typeface="sans"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

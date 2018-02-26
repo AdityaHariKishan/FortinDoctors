@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/utpal/Codecanyon/FortinDoctor/DoctorApp/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/home/utpal/Codecanyon/FortinDoctor/DoctorApp/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_0772240d4820b75f1935bf88e1bbf7455a1d1fe9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/utpal/.android/build-cache/3b01e8316f50db4e6b854dbb20a3f0a301244678/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2737331564e0084fc0eb30ba500564a6dbe5e98f">
+        <dex dex="/home/utpal/Codecanyon/FortinDoctor/DoctorApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ebe63b01c1ccf8366ff4c2a0708a6a1d00216b57/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/utpal/.android/build-cache/e55cf3829cf49ded3f15d827c48ba4839cd98330/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9a6350134db98fb39e212ddca5f0bad9280e8f3f">
+        <dex dex="/home/utpal/Codecanyon/FortinDoctor/DoctorApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1e6f59b545dab037e1dce66c5b07580ade6c41ce/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/utpal/.android/build-cache/4f69fa2721f68542abd58f06d95c8bca9be8fe21/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2c1d9fbe7d2f686b3dcdbc3f63a983a211401ca3">
+        <dex dex="/home/utpal/Codecanyon/FortinDoctor/DoctorApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_73961ab8ac5725e115531e488fdfa6713a5f7615/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/utpal/.android/build-cache/c35d8bd292e21160c59ba8b187b8ee14ec69824d/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f260cdc1a267b17b911022919f19d568e6624229">
+        <dex dex="/home/utpal/Codecanyon/FortinDoctor/DoctorApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_cf3f1bc753d5f25edf0e48d79660b2bfe3a3b216/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/utpal/.android/build-cache/de35d318115d23f6a7d6a9f6196b3138cc867d6b/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="db939a450ea2a721db84e774bf108e20c44a8a1d">
+        <dex dex="/home/utpal/Codecanyon/FortinDoctor/DoctorApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_bfab3a57d3a71709d3e8291f6a41fcd3207e689f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/utpal/Codecanyon/FortinDoctor/DoctorApp/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e9352310d13df97d74038432884750431c48bd13">
+        <dex dex="/home/utpal/Codecanyon/FortinDoctor/DoctorApp/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_8e900bbe83f6a697c9077b4538e9066f1e1438bf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/utpal/.android/build-cache/f03aa0120b9faaee8610aafbc485ececb58a8cbc/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fc5624185d414a0f572bfb3df7d841ceb335aef9">
+        <dex dex="/home/utpal/Codecanyon/FortinDoctor/DoctorApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c71d2759c23a07dbfff259948921c8fe1871dee8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/utpal/.android/build-cache/b65819866a063b6f6166457a2e4bcf755fcd93cc/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="549238d2484b8c2dc849f0c2f6b7ca9506fead4e">
+        <dex dex="/home/utpal/Codecanyon/FortinDoctor/DoctorApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7803014943d8d39bcf9ba65f0eb10f8525edaca1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/utpal/.android/build-cache/54dea45207d72ccb5699c500349a35b1bb3508a8/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="86baa7d1051901fc1b8e7f596732f71f32175bde">
+        <dex dex="/home/utpal/Codecanyon/FortinDoctor/DoctorApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_209a697553cd7081803f3471e184127fda129399/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/utpal/.android/build-cache/bd804aff9f8fe2181ebf2657b12f83c64c34422f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2a2d9cd43adbe7599a78f2293273a77881c1909a">
+        <dex dex="/home/utpal/Codecanyon/FortinDoctor/DoctorApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_bb3f68c88c35651c36be7982a237c28fc4a77447/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/utpal/.android/build-cache/d94315d755202dcf9c57787508307f9051ca3ccb/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a71be5f29a1c1e3fd3e84472742668f101a5b936">
+        <dex dex="/home/utpal/Codecanyon/FortinDoctor/DoctorApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_258377c146b81fa1000992a56a73460c274795a1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/utpal/.android/build-cache/e1a7e20e84f4d736c3f77bcabd4f269deaff2290/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="240e5a7c620376184f3168cfdd36315b97b1fe07">
+        <dex dex="/home/utpal/Codecanyon/FortinDoctor/DoctorApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_654ff4ae7a1a396da7607ce3b30436531eaec968/classes.dex" />
+    </item>
+
+</items>
